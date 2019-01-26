@@ -118,7 +118,7 @@ MicroKV.defaultMicroKV()
 ```
 自定义SharedPreferences文件名，写入数据，代码如下：
 ```java
-//customize( )方法的参数一：文件名；参数二：否开启加密，若不填写，默认不开启。
+//customize( )方法的参数一：文件名；参数二：是否开启加密，若不填写，默认不开启。
 MicroKV.customize("MyInfo")
         .setKV("nickname", "小学生")
         .setKV("age", 20)
@@ -128,7 +128,7 @@ MicroKV.customize("MyInfo")
 ```
 自定义SharedPreferences文件名并开启加密功能，写入数据，代码如下：
 ```java
-//customize( )方法的参数一：文件名；参数二：否开启加密，若不填写，默认不开启。
+//customize( )方法的参数一：文件名；参数二：是否开启加密，若不填写，默认不开启。
 MicroKV.customize("Account", true)
         .setKV("username", "Lake")
         .setKV("password", "20190120")
